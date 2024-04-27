@@ -21,7 +21,6 @@ public class PlayerCollision : MonoBehaviour
   private void OnCollisionEnter(Collision collisionInfo) {
     if (collisionInfo.collider.tag == "Damage") {
       TakeDamage(10);
-      Debug.Log("Damage");
       _animator.Play("PlayerGetDamage");
     }
   }

@@ -8,4 +8,12 @@ mergeInto(LibraryManager.library, {
     var container = document.querySelector(".container");
     container.style.backgroundColor = "transparent";
   },
+
+  JS_GetUsers: function () {
+    GetUsers();
+  },
+
+  JS_SaveUser: function (str, score) {
+    SaveUsers(UTF8ToString(str), score);
+  },
 });

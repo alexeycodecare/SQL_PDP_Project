@@ -845,6 +845,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4165968425285331882, guid: 58b120c0443584a4f82cb115384392cf, type: 3}
+      propertyPath: scoreSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 17b52b26b96681440adf75917b0f3988, type: 2}
     - target: {fileID: 4165968425285331885, guid: 58b120c0443584a4f82cb115384392cf, type: 3}
       propertyPath: m_Name
       value: Player
@@ -910,6 +914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4203267849162882211, guid: ca55173683081ae4e8d235adbbd60d92, type: 3}
+      propertyPath: scoreSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 17b52b26b96681440adf75917b0f3988, type: 2}
     - target: {fileID: 4203267849162882211, guid: ca55173683081ae4e8d235adbbd60d92, type: 3}
       propertyPath: levelMenuUI
       value: 

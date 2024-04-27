@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
 
   public GameObject levelMenuUI;
   public GameObject levelMenuWonUI;
+  [SerializeField] private FloatSO scoreSO;
 
   public void EndGame() {
     if (gameHasEnded == false) {
       gameHasEnded = true;
       levelMenuUI.SetActive(true);
+      SavePlayerScore();
     }
   }
 
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     if (gameHasEnded == false) {
       gameHasEnded = true;
       levelMenuWonUI.SetActive(true);
+      SavePlayerScore();
     }
   }
 
@@ -33,6 +36,13 @@ public class GameManager : MonoBehaviour
   }
 
   public void GoToMainMenu() {
+    JS_PlayerRestart();
     SceneManager.LoadScene("MeinMenuScene");
+  }
+
+  private void SavePlayerScore() {
+    string userName = StaticData.userName;
+    int score = Mathf.RoundToInt(scoreSO.Value);
+    JS_SendSaveUser(userName, score);
   }
 }
