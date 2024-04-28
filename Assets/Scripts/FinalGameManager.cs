@@ -26,9 +26,9 @@ public class FinalGameManager : MonoBehaviour
   public void ShowUsersList(string json) {
     dataList = ReadFromJson<PlayerInfo>(json);
 
-    string userListString = "User List:\n";
+    string userListString = "Top List:\n";
     foreach (PlayerInfo playerInfo in dataList) {
-        userListString += "ID: " + playerInfo.id + ", UserName: " + playerInfo.userName + ", Score: " + playerInfo.score + "\n";
+        userListString += playerInfo.userName + ": " + playerInfo.score + "\n";
     }
     
     userListText.text = userListString;
